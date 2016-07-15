@@ -1,0 +1,88 @@
+html,body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.container-fluid{
+    height:100%;
+    width:100%;
+    display:table;
+    padding:0;
+    background-color: white;
+}
+
+.row-fluid{
+    height:100%;
+    display:table-cell;
+}
+
+.centering{
+    float:none;
+    margin: 0 auto;
+    width:510px;
+    height:510px;
+    margin-top:30px;
+    background-color: limegreen;
+}
+
+.cell{
+    height:170px;
+    border-color:white;
+    border-width: 1px;
+    text-align: center;
+}
+
+.cell-border-right{
+    border-right-style: solid;
+}
+
+.cell-border-bottom{
+    border-bottom-style: solid;
+}
+
+.cell-content{
+    vertical-align: middle;
+}
+
+.padding-top{
+    padding-top:10px;
+}
+
+h2{
+    margin-top:70px;
+    color: white;
+}
+
+.red-text{
+    color: red;
+    font-weight:bold;
+    font-size:50px;
+}
+
+.theme-background-color{
+    background-color: white;
+}
+
+.theme-color{
+    color: limegreen;
+}
+
+@keyframes blink-animation {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+@-webkit-keyframes blink-animation {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+.blink {
+    animation-name: blink-animation;
+    -webkit-animation-name: blink-animation;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
